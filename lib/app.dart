@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       title: 'Discovery',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        primarySwatch: Colors.yellow,
       ),
       home: const Home(),
     );
