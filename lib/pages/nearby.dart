@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
-class NearbyPage extends StatefulWidget {
-  const NearbyPage({super.key});
+class Nearby extends StatefulWidget {
+  const Nearby({super.key});
 
   @override
-  State<NearbyPage> createState() => _NearbyPageState();
+  State<Nearby> createState() => _NearbyState();
 }
 
-class _NearbyPageState extends State<NearbyPage> {
+class _NearbyState extends State<Nearby> {
   late GoogleMapController mapController;
 
   final LatLng _center = const LatLng(-5.085992268303342, -42.81132175965173); // Localização do IFPI - CATCE

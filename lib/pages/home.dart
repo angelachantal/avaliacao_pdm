@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
     if (index == 1) {
     Navigator.push(context, MaterialPageRoute(builder: (_) => const Nearby()));
   } else if (index == 2) {
-    Navigator.push(context, MaterialPageRoute(builder: (_) => const FeaturedFood()));
+    Navigator.push(context, MaterialPageRoute(builder: (_) => const Bookmark()));
   }
 }
 
