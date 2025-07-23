@@ -1,10 +1,10 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
-project(ava_pdm_angelachantal LANGUAGES CXX)
+project(avaliacao_pmd LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "ava_pdm_angelachantal")
+set(BINARY_NAME "avaliacao_pmd")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

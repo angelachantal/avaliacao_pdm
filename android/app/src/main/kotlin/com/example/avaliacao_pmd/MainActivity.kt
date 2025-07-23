@@ -1,4 +1,4 @@
-package com.example.ava_pdm_angelachantal
+package com.example.avaliacao_pmd
 
 import io.flutter.embedding.android.FlutterActivity
 
