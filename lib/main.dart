@@ -13,8 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Discovery App',
+      title: 'Discovery',
       home: const MainWrapper(),
+      debugShowCheckedModeBanner: false,
+
     );
   }
 }
