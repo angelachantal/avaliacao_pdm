@@ -7,5 +7,6 @@
         }
     ],
     "java.compile.nullAnalysis.mode": "automatic",
-    "dart.flutterSdkPath": "C:\\Users\\angel\\flutter"
+    "dart.flutterSdkPath": "C:\\Users\\angel\\flutter",
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
