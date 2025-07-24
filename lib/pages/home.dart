@@ -5,7 +5,6 @@ import 'dining.dart';
 import 'nearby.dart';
 import 'fastfood.dart';
 import 'featured.dart';
-import '../widgets/navbar.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -26,7 +25,7 @@ class Home extends StatelessWidget {
           _buildCard(context, 'Cafes', 'assets/images/cafeteria.png', Cafe(), Colors.white),
           _buildCard(context, 'Nearby', 'assets/images/rota.png', Nearby(), Colors.yellow),
           _buildCard(context, 'Fast Foods', 'assets/images/fast-food.png', FastFood(), Colors.white),
-          _buildCard(context, 'Featured Foods', 'assets/images/featured-food.png', Featured(), Colors.white),
+          _buildCard(context, 'Featured Foods', 'assets/images/pizza.png', Featured(), Colors.white),
         ],
       ),
     );
@@ -61,37 +60,3 @@ class Home extends StatelessWidget {
   }  
 }
 
-class MainWrapper extends StatefulWidget {
-  const MainWrapper({super.key});
-
-  @override
-  State<MainWrapper> createState() => _MainWrapperState();
-}
-
-class _MainWrapperState extends State<MainWrapper> {
-  int _currentIndex = 0;
-
-  final List<Widget> _pages = [
-    const Home(),           
-    const Nearby(),           
-    const Bars(),   
-    const Cafe(),    
-  ];
-
-  void _onNavTap(int index) {
-    setState(() {
-      _currentIndex = index;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: _pages[_currentIndex],
-      bottomNavigationBar: CustomNavBar(
-        currentIndex: _currentIndex,
-        onTap: _onNavTap,
-      ),
-    );
-  }
-}

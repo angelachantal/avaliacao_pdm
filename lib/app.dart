@@ -1,7 +1,7 @@
 // Define as rotas do app e configura temas globais.
 
+import 'mainwrapper.dart'; 
 import 'package:flutter/material.dart';
-import 'pages/home.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -13,8 +13,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.yellow,
+        useMaterial3: true,
       ),
-      home: const Home(),
+      home: const MainWrapper(),
     );
   }
 }
