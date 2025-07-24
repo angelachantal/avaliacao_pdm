@@ -1,10 +1,4 @@
 import 'package:flutter/material.dart';
-import '../pages/bars.dart';
-import '../pages/cafes.dart';
-import '../pages/dining.dart';
-import '../pages/nearby.dart';
-import '../pages/fastfood.dart';
-import '../pages/featured.dart';
 
 class CustomNavBar extends StatelessWidget {
   final int currentIndex;
